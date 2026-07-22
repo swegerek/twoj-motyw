@@ -128,6 +128,71 @@ get_header();
 	</div>
 </section>
 
+<!-- Testimonials Section -->
+<section class="testimonials-section container-wide">
+	<div class="section-header">
+		<span class="section-tag">OPINIE KLIENTÓW</span>
+		<h2 class="section-title">Zaufali Nam Liderzy</h2>
+		<p class="section-subtitle">Zobacz, jak nasze innowacje transformują biznesy na całym świecie</p>
+	</div>
+
+	<div class="testimonials-grid">
+		<!-- Testimonial 1 -->
+		<article class="testimonial-card">
+			<div class="testimonial-content">
+				<svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1.5.5 1.5 1.5L5 21z"></path>
+					<path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.5c0 2.25-.5 4-1.5 8z"></path>
+				</svg>
+				<p class="testimonial-text">"Wdrożenie autonomicznego AI od Futuria skróciło nasz czas przetwarzania danych o 70%. To absolutny przełom technologiczny."</p>
+			</div>
+			<div class="testimonial-author">
+				<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Anna Kowalska" class="testimonial-avatar">
+				<div class="testimonial-meta">
+					<h4 class="testimonial-name">Anna Kowalska</h4>
+					<span class="testimonial-role">CTO, DataCorp</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Testimonial 2 -->
+		<article class="testimonial-card">
+			<div class="testimonial-content">
+				<svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1.5.5 1.5 1.5L5 21z"></path>
+					<path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.5c0 2.25-.5 4-1.5 8z"></path>
+				</svg>
+				<p class="testimonial-text">"Dzięki rozwiązaniom Cyber Shield czujemy się bezpiecznie. Ich proaktywne podejście uchroniło nas przed wieloma atakami."</p>
+			</div>
+			<div class="testimonial-author">
+				<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Michał Nowak" class="testimonial-avatar">
+				<div class="testimonial-meta">
+					<h4 class="testimonial-name">Michał Nowak</h4>
+					<span class="testimonial-role">CISO, FinTech Solutions</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Testimonial 3 -->
+		<article class="testimonial-card">
+			<div class="testimonial-content">
+				<svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1.5.5 1.5 1.5L5 21z"></path>
+					<path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.5c0 2.25-.5 4-1.5 8z"></path>
+				</svg>
+				<p class="testimonial-text">"Współpraca z Futuria to gwarancja najwyższej jakości. Ich zespół świetnie rozumie potrzeby nowoczesnego biznesu."</p>
+			</div>
+			<div class="testimonial-author">
+				<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=150&q=80" alt="Katarzyna Wiśniewska" class="testimonial-avatar">
+				<div class="testimonial-meta">
+					<h4 class="testimonial-name">Katarzyna Wiśniewska</h4>
+					<span class="testimonial-role">CEO, InnovateX</span>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
 <!-- Latest Blog Posts Section (WP_Query) -->
 <section class="blog-posts-section container-wide">
 	<div class="section-header">
