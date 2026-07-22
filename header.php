@@ -21,6 +21,12 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">F U T U R I A</a>
 		</div>
 
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Przełącz menu nawigacyjne', 'futuria' ); ?>">
+			<span class="hamburger-bar"></span>
+			<span class="hamburger-bar"></span>
+			<span class="hamburger-bar"></span>
+		</button>
+
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'futuria' ); ?>">
 				<?php

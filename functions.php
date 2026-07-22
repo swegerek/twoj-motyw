@@ -65,7 +65,16 @@ function futuria_scripts() {
 		null
 	);
 
-	// Main stylesheet using theme.json CSS variables
+	// Main stylesheet
 	wp_enqueue_style( 'futuria-style', get_stylesheet_uri(), array(), '1.0.0' );
+
+	// Mobile Navigation Script
+	wp_enqueue_script(
+		'futuria-navigation',
+		get_template_directory_uri() . '/assets/js/navigation.js',
+		array(),
+		'1.0.0',
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'futuria_scripts' );
