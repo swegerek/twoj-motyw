@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Strona Kontaktowa
- * Template for displaying the Contact page with clean SVG icons, details card, contact form, and Google Maps
+ * Template for displaying the Contact page with clean SVG icons, details card, contact form, and full-width Google Maps below
  *
  * @package Futuria
  */
@@ -17,9 +17,10 @@ get_header();
 	</div>
 </section>
 
-<div class="page-container container-wide" style="margin-top: 3.5rem; margin-bottom: 3.5rem;">
+<div class="page-container container-wide" style="margin-top: 3.5rem; margin-bottom: 4rem;">
+	<!-- 2-Column Contact Grid -->
 	<div class="contact-section-grid">
-		<!-- Left Column: Contact Details Card & Google Maps -->
+		<!-- Left Column: Contact Details Card -->
 		<div class="contact-info-col">
 			<div class="contact-details-card">
 				<h3>Dane Kontaktowe</h3>
@@ -66,17 +67,6 @@ get_header();
 					</li>
 				</ul>
 			</div>
-
-			<!-- Google Maps Embed -->
-			<div class="google-map-wrapper">
-				<iframe 
-					title="Lokalizacja Futuria Tower w Warszawie"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438531122!2d20.92111244837424!3d52.23306531998595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcc711a413e5f%3A0x73b72e0d350431b2!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
-					allowfullscreen="" 
-					loading="lazy" 
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</div>
 		</div>
 
 		<!-- Right Column: Contact Form -->
@@ -110,6 +100,17 @@ get_header();
 				</form>
 			</div>
 		</div>
+	</div>
+
+	<!-- Full-Width Google Maps Embed below contact form & details -->
+	<div class="google-map-wrapper" style="margin-top: 3.5rem; height: 380px;">
+		<iframe 
+			title="Lokalizacja Futuria Tower w Warszawie"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438531122!2d20.92111244837424!3d52.23306531998595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcc711a413e5f%3A0x73b72e0d350431b2!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
 	</div>
 </div>
 

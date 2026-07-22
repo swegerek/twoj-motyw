@@ -728,11 +728,11 @@ a:hover {
 }
 
 .entry-content-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 24px;
-  padding: 3.5rem 3rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .entry-content {
