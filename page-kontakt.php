@@ -73,7 +73,6 @@ get_header();
 		<div class="contact-form-col">
 			<div class="contact-form-card">
 				<h2>Napisz do nas</h2>
-				<p class="form-subtitle">Wypełnij poniższy formularz. Nasz konsultant odpowie w ciągu 24 godzin.</p>
 
 				<form action="#" method="post" class="futuria-contact-form" onsubmit="event.preventDefault(); alert('Dziękujemy za wiadomość! Odpowiemy najszybciej jak to możliwe.'); this.reset();">
 					<div class="form-group">
@@ -87,11 +86,6 @@ get_header();
 					</div>
 
 					<div class="form-group">
-						<label for="contact-subject">Temat wiadomości</label>
-						<input type="text" id="contact-subject" name="subject" placeholder="Współpraca / Zapytanie ofertowe">
-					</div>
-
-					<div class="form-group">
 						<label for="contact-message">Treść wiadomości *</label>
 						<textarea id="contact-message" name="message" rows="5" placeholder="Opisz swój projekt lub zapytanie..." required></textarea>
 					</div>
@@ -102,16 +96,17 @@ get_header();
 		</div>
 	</div>
 
-	<!-- Full-Width Google Maps Embed below contact form & details -->
-	<div class="google-map-wrapper" style="margin-top: 3.5rem; height: 380px;">
-		<iframe 
-			title="Lokalizacja Futuria Tower w Warszawie"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438531122!2d20.92111244837424!3d52.23306531998595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcc711a413e5f%3A0x73b72e0d350431b2!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
-			allowfullscreen="" 
-			loading="lazy" 
-			referrerpolicy="no-referrer-when-downgrade">
-		</iframe>
-	</div>
+</div>
+
+<!-- Full-Width Google Maps Embed below contact form & details -->
+<div class="google-map-wrapper">
+	<iframe
+		title="Lokalizacja Futuria Tower w Warszawie"
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438531122!2d20.92111244837424!3d52.23306531998595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcc711a413e5f%3A0x73b72e0d350431b2!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl"
+		allowfullscreen=""
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	</iframe>
 </div>
 
 <?php

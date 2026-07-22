@@ -129,14 +129,15 @@ get_header();
 </section>
 
 <!-- Testimonials Section -->
-<section class="testimonials-section container-wide">
-	<div class="section-header">
-		<span class="section-tag">OPINIE KLIENTÓW</span>
-		<h2 class="section-title">Zaufali Nam Liderzy</h2>
-		<p class="section-subtitle">Zobacz, jak nasze innowacje transformują biznesy na całym świecie</p>
-	</div>
+<section class="testimonials-section" style="background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover fixed;">
+	<div class="container-wide">
+		<div class="section-header">
+			<span class="section-tag">OPINIE KLIENTÓW</span>
+			<h2 class="section-title">Zaufali Nam Liderzy</h2>
+			<p class="section-subtitle">Zobacz, jak nasze innowacje transformują biznesy na całym świecie</p>
+		</div>
 
-	<div class="testimonials-grid">
+		<div class="testimonials-grid">
 		<!-- Testimonial 1 -->
 		<article class="testimonial-card">
 			<div class="testimonial-content">
@@ -190,18 +191,20 @@ get_header();
 				</div>
 			</div>
 		</article>
+		</div>
 	</div>
 </section>
 
 <!-- Latest Blog Posts Section (WP_Query) -->
-<section class="blog-posts-section container-wide">
-	<div class="section-header">
-		<span class="section-tag">WIEDZA I AKTUALNOŚCI</span>
-		<h2 class="section-title">Najnowsze Artykuły z Bloga</h2>
-		<p class="section-subtitle">Bądź na bieżąco z najnowszymi trendami w świecie nowoczesnych technologii</p>
-	</div>
+<section class="blog-posts-section">
+	<div class="container-wide">
+		<div class="section-header">
+			<span class="section-tag">WIEDZA I AKTUALNOŚCI</span>
+			<h2 class="section-title">Najnowsze Artykuły z Bloga</h2>
+			<p class="section-subtitle">Bądź na bieżąco z najnowszymi trendami w świecie nowoczesnych technologii</p>
+		</div>
 
-	<div class="blog-grid">
+		<div class="blog-grid">
 		<?php
 		$latest_posts_query = new WP_Query(
 			array(
@@ -241,6 +244,7 @@ get_header();
 			?>
 			<p style="text-align: center; color: var(--wp--preset--color--text-muted); width: 100%;">Brak opublikowanych artykułów.</p>
 		<?php endif; ?>
+		</div>
 	</div>
 </section>
 
