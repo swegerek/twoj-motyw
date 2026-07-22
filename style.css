@@ -100,9 +100,10 @@ p:has(> .section-tag) {
 }
 
 .section-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
   color: #0f172a;
+  letter-spacing: -0.01em;
 }
 
 .section-subtitle {
@@ -259,54 +260,49 @@ p:empty {
 
 /* Buttons */
 .btn-futuria-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   padding: 0.875rem 2rem;
   font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
   color: #ffffff !important;
-  background: linear-gradient(135deg, var(--wp--preset--color--primary-blue, #0066ff) 0%, #0052cc 100%);
+  background: linear-gradient(135deg, var(--wp--preset--color--primary-blue, #0066ff) 0%, var(--wp--preset--color--accent-purple, #4f46e5) 100%);
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.35);
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .btn-futuria-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.5);
-  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.5);
+  transform: translateY(-4px);
 }
 
 .btn-futuria-outline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   padding: 0.875rem 2rem;
   font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #1e293b !important;
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
+  color: var(--wp--preset--color--text-main, #1e293b) !important;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .btn-futuria-outline:hover {
-  border-color: var(--wp--preset--color--primary-blue, #0066ff);
+  background: #ffffff;
+  border-color: #ffffff;
   color: var(--wp--preset--color--primary-blue, #0066ff) !important;
-  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.15);
-  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 /* Front Page Hero Section */
@@ -344,11 +340,12 @@ p:empty {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
   color: #ffffff;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.02em;
 }
 
 .hero-description {
@@ -501,12 +498,14 @@ p:empty {
 }
 
 .feature-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1209,4 +1208,92 @@ p:empty {
   .cta-form-card {
     padding: 2rem 1.5rem;
   }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 5rem 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 102, 255, 0.1);
+  border-color: rgba(0, 102, 255, 0.3);
+}
+
+.testimonial-content {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.quote-icon {
+  color: var(--wp--preset--color--primary-blue, #0066ff);
+  opacity: 0.2;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 0;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #334155;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.5rem;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f8fafc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.1rem;
+  font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: var(--wp--preset--color--primary-blue, #0066ff);
+  font-weight: 600;
 }
