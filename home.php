@@ -10,13 +10,13 @@ get_header();
 
 <!-- Small Hero Banner for Blog Index with Unique Tech Background -->
 <section class="small-hero" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
-	<div class="small-hero-container">
-		<h1 class="small-hero-title" style="color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Aktualności & Technologie</h1>
+	<div class="small-hero-container container-narrow">
+		<h1 class="small-hero-title">Aktualności & Technologie</h1>
 		<p style="color: #f1f5f9; font-size: 1.1rem; margin-top: 0.5rem; text-shadow: 0 1px 6px rgba(0,0,0,0.5);">Najnowsze artykuły, raporty techniczne i przemyślenia naszych inżynierów</p>
 	</div>
 </section>
 
-<div class="page-container">
+<div class="page-container container-wide" style="margin-top: 3.5rem; margin-bottom: 3.5rem;">
 	<?php if ( have_posts() ) : ?>
 		<div class="blog-grid" style="margin-bottom: 3rem;">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -53,7 +53,7 @@ get_header();
 			?>
 		</div>
 	<?php else : ?>
-		<article>
+		<article class="entry-content-card">
 			<div class="entry-content">
 				<p><?php esc_html_e( 'Brak wpisów do wyświetlenia.', 'futuria' ); ?></p>
 			</div>

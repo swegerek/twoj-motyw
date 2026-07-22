@@ -22,12 +22,12 @@ if ( is_page( 'o-nas' ) ) {
 	<?php while ( have_posts() ) : the_post(); ?>
 		<!-- Small Hero Banner for Inner Pages -->
 		<section class="small-hero" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.75) 100%), url('<?php echo esc_url( $hero_bg_url ); ?>') center/cover no-repeat;">
-			<div class="small-hero-container">
+			<div class="small-hero-container container-narrow">
 				<h1 class="small-hero-title"><?php the_title(); ?></h1>
 			</div>
 		</section>
 
-		<div class="page-container">
+		<div class="page-container container">
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-content-card' ); ?>>
 				<div class="entry-content">
 					<?php the_content(); ?>

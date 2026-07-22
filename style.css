@@ -48,6 +48,36 @@ a:hover {
   color: #0044cc;
 }
 
+/* ==========================================================================
+   Global Container Design System & Responsive Breakpoints
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: var(--wp--style--global--content-size, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--wp--style--global--wide-size, 1400px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 /* Common Section Tags & Headers */
 .section-tag {
   display: inline-block;

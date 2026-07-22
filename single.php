@@ -21,13 +21,13 @@ if ( has_post_thumbnail() ) {
 	<?php while ( have_posts() ) : the_post(); ?>
 		<!-- Small Hero Banner for Single Post -->
 		<section class="small-hero" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.78) 100%), url('<?php echo esc_url( $single_hero_bg ); ?>') center/cover no-repeat;">
-			<div class="small-hero-container">
+			<div class="small-hero-container container-narrow">
 				<span class="section-tag" style="color: #00f2fe; margin-bottom: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.5);"><?php echo get_the_date( 'd F Y' ); ?></span>
 				<h1 class="small-hero-title"><?php the_title(); ?></h1>
 			</div>
 		</section>
 
-		<div class="page-container">
+		<div class="page-container container">
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-content-card' ); ?>>
 				<div class="entry-content">
 					<?php the_content(); ?>

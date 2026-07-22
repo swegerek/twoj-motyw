@@ -10,7 +10,7 @@ get_header();
 
 <!-- Main Hero Section -->
 <section class="hero-futuria">
-	<div class="hero-futuria-content">
+	<div class="hero-futuria-content container-narrow">
 		<span class="hero-tag">INNOWACJE PRZYSZŁOŚCI</span>
 		<h1 class="hero-title">PRZYSZŁOŚĆ TECHNOLOGII JEST DZIŚ</h1>
 		<p class="hero-description">
@@ -24,7 +24,7 @@ get_header();
 </section>
 
 <!-- Media & Text Section -->
-<section class="media-text-section">
+<section class="media-text-section container-wide">
 	<div class="media-text-container">
 		<div class="media-text-image">
 			<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Futuria Innovation Center">
@@ -44,7 +44,7 @@ get_header();
 </section>
 
 <!-- Our Team Section -->
-<section class="team-section">
+<section class="team-section container-wide">
 	<div class="section-header">
 		<span class="section-tag">ZESPÓŁ EKSPERTÓW</span>
 		<h2 class="section-title">Poznaj Ludzi Tworzących Przyszłość</h2>
@@ -85,7 +85,7 @@ get_header();
 </section>
 
 <!-- Features Grid / Services Section -->
-<section class="features-section">
+<section class="features-section container-wide">
 	<div class="section-header">
 		<span class="section-tag">NASZE SPECJALIZACJE</span>
 		<h2 class="section-title">Kluczowe Technologie Futuria</h2>
@@ -129,7 +129,7 @@ get_header();
 </section>
 
 <!-- Latest Blog Posts Section (WP_Query) -->
-<section class="blog-posts-section">
+<section class="blog-posts-section container-wide">
 	<div class="section-header">
 		<span class="section-tag">WIEDZA I AKTUALNOŚCI</span>
 		<h2 class="section-title">Najnowsze Artykuły z Bloga</h2>
@@ -181,7 +181,7 @@ get_header();
 
 <!-- Full Width Contact Section with Darkened Image Background -->
 <section class="cta-contact-section">
-	<div class="cta-contact-container">
+	<div class="cta-contact-container container-wide">
 		<div class="cta-contact-grid">
 			<!-- Left Side: Image & Catchy Text -->
 			<div class="cta-contact-left">

@@ -9,7 +9,7 @@
 </main><!-- #primary -->
 
 <footer id="colophon" class="site-footer">
-	<div class="footer-container-grid">
+	<div class="footer-container-grid container-wide">
 		<!-- Column 1: Logo & Company Info -->
 		<div class="footer-col footer-col-brand">
 			<div class="footer-logo">F U T U R I A</div>
@@ -58,9 +58,9 @@
 		</div>
 	</div>
 
-	<hr class="footer-hr">
+	<hr class="footer-hr container-wide">
 
-	<div class="footer-bottom-bar">
+	<div class="footer-bottom-bar container-wide">
 		<p>&copy; <?php echo date( 'Y' ); ?> Futuria Technologies Inc. Wszelkie prawa zastrzeżone.</p>
 		<p class="footer-credits">Made with ❤️ by <strong>Futuria Team</strong></p>
 	</div>

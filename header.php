@@ -16,7 +16,7 @@
 <?php wp_body_open(); ?>
 
 <header id="masthead" class="site-header">
-	<div class="header-container">
+	<div class="header-container container-wide">
 		<div class="site-title-brand">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">F U T U R I A</a>
 		</div>
