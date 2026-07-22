@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer in Futuria theme
  *
- * @package Twoj_Motyw
+ * @package Futuria
  */
 
 ?>
@@ -10,7 +10,9 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="footer-container">
-		<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>. Wszelkie prawa zastrzeżone.</p>
+		<div class="footer-logo">F U T U R I A</div>
+		<div class="footer-divider"></div>
+		<p>&copy; <?php echo date( 'Y' ); ?> Futuria Technologies Inc. Wszelkie prawa zastrzeżone.</p>
 	</div>
 </footer>
 

@@ -1,35 +1,37 @@
 <?php
 /**
- * The main template file
+ * The main template file for Futuria theme
  *
- * @package Twoj_Motyw
+ * @package Futuria
  */
 
 get_header();
 ?>
 
-<?php if ( have_posts() ) : ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-card' ); ?>>
-			<header class="entry-header">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</header>
+<div class="page-container">
+	<?php if ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="margin-bottom: 3rem;">
+				<header class="page-header">
+					<h1 class="page-header-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				</header>
 
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
+			</article>
+		<?php endwhile; ?>
+	<?php else : ?>
+		<article>
+			<header class="page-header">
+				<h1 class="page-header-title"><?php esc_html_e( 'Brak zawartości', 'futuria' ); ?></h1>
+			</header>
 			<div class="entry-content">
-				<?php the_content(); ?>
+				<p><?php esc_html_e( 'Nie znaleziono wpisów ani stron spełniających podane kryteria.', 'futuria' ); ?></p>
 			</div>
 		</article>
-	<?php endwhile; ?>
-<?php else : ?>
-	<article class="entry-card">
-		<header class="entry-header">
-			<h1 class="entry-title"><?php esc_html_e( 'Brak zawartości', 'twoj-motyw' ); ?></h1>
-		</header>
-		<div class="entry-content">
-			<p><?php esc_html_e( 'Nie znaleziono treści spełniających podane kryteria.', 'twoj-motyw' ); ?></p>
-		</div>
-	</article>
-<?php endif; ?>
+	<?php endif; ?>
+</div>
 
 <?php
 get_footer();

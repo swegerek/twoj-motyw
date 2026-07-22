@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme
+ * The header for Futuria theme
  *
- * @package Twoj_Motyw
+ * @package Futuria
  */
 
 ?><!DOCTYPE html>
@@ -17,12 +17,12 @@
 
 <header id="masthead" class="site-header">
 	<div class="header-container">
-		<div class="site-title">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+		<div class="site-title-brand">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">F U T U R I A</a>
 		</div>
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twoj-motyw' ); ?>">
+			<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'futuria' ); ?>">
 				<?php
 				wp_nav_menu(
 					array(

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Deep Space Dark",
+          "slug": "bg-dark",
+          "color": "#0b0f19"
+        },
+        {
+          "name": "Dark Navy Card",
+          "slug": "bg-card",
+          "color": "#111827"
+        },
+        {
+          "name": "Pure Light Text",
+          "slug": "text-main",
+          "color": "#f8fafc"
+        },
+        {
+          "name": "Muted Steel",
+          "slug": "text-muted",
+          "color": "#94a3b8"
+        },
+        {
+          "name": "Futuria Cyan",
+          "slug": "neon-cyan",
+          "color": "#00f2fe"
+        },
+        {
+          "name": "Futuria Purple",
+          "slug": "neon-purple",
+          "color": "#9d4edd"
+        },
+        {
+          "name": "Accent Blue",
+          "slug": "neon-blue",
+          "color": "#3b82f6"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Outfit', sans-serif",
+          "name": "Outfit",
+          "slug": "outfit"
+        },
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Small",
+          "size": "0.875rem",
+          "slug": "small"
+        },
+        {
+          "name": "Normal",
+          "size": "1rem",
+          "slug": "normal"
+        },
+        {
+          "name": "Medium",
+          "size": "1.25rem",
+          "slug": "medium"
+        },
+        {
+          "name": "Large",
+          "size": "1.875rem",
+          "slug": "large"
+        },
+        {
+          "name": "Huge",
+          "size": "2.5rem",
+          "slug": "huge"
+        },
+        {
+          "name": "Hero",
+          "size": "3.75rem",
+          "slug": "hero"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--bg-dark)",
+      "text": "var(--wp--preset--color--text-main)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--neon-cyan)"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--outfit)"
+        }
+      }
+    }
+  }
+}

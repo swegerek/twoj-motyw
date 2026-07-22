@@ -1,19 +1,19 @@
 <?php
 /**
- * Twój Motyw functions and definitions
+ * Futuria Theme Functions and Setup
  *
- * @package Twoj_Motyw
+ * @package Futuria
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists( 'twoj_motyw_setup' ) ) :
+if ( ! function_exists( 'futuria_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 */
-	function twoj_motyw_setup() {
+	function futuria_setup() {
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -26,7 +26,7 @@ if ( ! function_exists( 'twoj_motyw_setup' ) ) :
 		// Register Primary Navigation Menu.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary Menu', 'twoj-motyw' ),
+				'primary' => esc_html__( 'Primary Menu', 'futuria' ),
 			)
 		);
 
@@ -43,14 +43,29 @@ if ( ! function_exists( 'twoj_motyw_setup' ) ) :
 				'script',
 			)
 		);
+
+		// Add support for Block Editor features.
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'editor-styles' );
 	}
 endif;
-add_action( 'after_setup_theme', 'twoj_motyw_setup' );
+add_action( 'after_setup_theme', 'futuria_setup' );
 
 /**
  * Enqueue scripts and styles.
  */
-function twoj_motyw_scripts() {
-	wp_enqueue_style( 'twoj-motyw-style', get_stylesheet_uri(), array(), '1.0.0' );
+function futuria_scripts() {
+	// Google Fonts: Outfit & Inter
+	wp_enqueue_style(
+		'futuria-fonts',
+		'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;900&display=swap',
+		array(),
+		null
+	);
+
+	// Main stylesheet using theme.json CSS variables
+	wp_enqueue_style( 'futuria-style', get_stylesheet_uri(), array(), '1.0.0' );
 }
-add_action( 'wp_enqueue_scripts', 'twoj_motyw_scripts' );
+add_action( 'wp_enqueue_scripts', 'futuria_scripts' );
