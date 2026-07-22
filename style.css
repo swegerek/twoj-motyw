@@ -701,7 +701,11 @@ a:hover {
 /* Small Hero Banner for Inner Pages */
 .small-hero {
   border-bottom: 1px solid #e2e8f0;
-  padding: 5.5rem 2rem;
+  padding: 8rem 2rem;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
 }

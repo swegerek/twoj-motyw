@@ -87,7 +87,7 @@ get_header();
 <!-- Features Grid / Services Section -->
 <section class="features-section container-wide">
 	<div class="section-header">
-		<span class="section-tag">NASZE SPECJALIZACJE</span>
+		<span class="section-tag">NASZE USŁUGI</span>
 		<h2 class="section-title">Kluczowe Technologie Futuria</h2>
 		<p class="section-subtitle">Rozwiązania nowej generacji zaprojektowane dla liderów branży cyfrowej</p>
 	</div>
@@ -96,7 +96,7 @@ get_header();
 		<!-- Card 1 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80" alt="Sztuczna Inteligencja">
+				<img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Autonomiczne AI">
 			</div>
 			<h3 class="feature-title">Autonomiczne AI</h3>
 			<p class="feature-desc">
