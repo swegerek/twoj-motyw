@@ -10,39 +10,39 @@
     "color": {
       "palette": [
         {
-          "name": "Deep Space Dark",
-          "slug": "bg-dark",
-          "color": "#0b0f19"
+          "name": "Pure White",
+          "slug": "bg-light",
+          "color": "#ffffff"
         },
         {
-          "name": "Dark Navy Card",
+          "name": "Light Surface",
+          "slug": "bg-surface",
+          "color": "#f8f9fa"
+        },
+        {
+          "name": "Card White",
           "slug": "bg-card",
-          "color": "#111827"
+          "color": "#ffffff"
         },
         {
-          "name": "Pure Light Text",
+          "name": "Dark Slate Text",
           "slug": "text-main",
-          "color": "#f8fafc"
+          "color": "#1e293b"
         },
         {
-          "name": "Muted Steel",
+          "name": "Slate Muted",
           "slug": "text-muted",
-          "color": "#94a3b8"
+          "color": "#64748b"
         },
         {
-          "name": "Futuria Cyan",
-          "slug": "neon-cyan",
-          "color": "#00f2fe"
+          "name": "Vibrant Blue",
+          "slug": "primary-blue",
+          "color": "#0066ff"
         },
         {
-          "name": "Futuria Purple",
-          "slug": "neon-purple",
-          "color": "#9d4edd"
-        },
-        {
-          "name": "Accent Blue",
-          "slug": "neon-blue",
-          "color": "#3b82f6"
+          "name": "Electric Indigo",
+          "slug": "accent-purple",
+          "color": "#4f46e5"
         }
       ]
     },
@@ -95,13 +95,13 @@
   },
   "styles": {
     "color": {
-      "background": "var(--wp--preset--color--bg-dark)",
+      "background": "var(--wp--preset--color--bg-surface)",
       "text": "var(--wp--preset--color--text-main)"
     },
     "elements": {
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--neon-cyan)"
+          "text": "var(--wp--preset--color--primary-blue)"
         }
       },
       "heading": {

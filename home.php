@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the blog posts index (home.php)
+ * The template for displaying the blog posts index in Futuria theme (Light Theme)
  *
  * @package Futuria
  */
@@ -25,7 +25,7 @@ get_header();
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'medium_large' ); ?>
 						<?php else : ?>
-							<img src="https://placehold.co/600x400/111827/00f2fe" alt="<?php the_title_attribute(); ?>">
+							<img src="https://loremflickr.com/600/400/computer,laptop" alt="<?php the_title_attribute(); ?>">
 						<?php endif; ?>
 					</div>
 					<div class="blog-card-body">

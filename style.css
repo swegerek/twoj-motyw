@@ -3,14 +3,14 @@ Theme Name: Futuria
 Theme URI: https://github.com/swegerek/twoj-motyw
 Author: Antigravity Assistant & Developer
 Author URI: https://github.com/swegerek
-Description: Innowacyjny, futurystyczny motyw WordPress stworzony dla marki technologicznej Futuria z natywną obsługą edytora Gutenberg.
-Version: 1.2.0
+Description: Elegancki, jasny i nowoczesny motyw WordPress stworzony dla marki technologicznej Futuria (Light Theme) z natywną obsługą edytora Gutenberg i zdjęciami z LoremFlickr.
+Version: 2.0.0
 Requires at least: 6.0
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: futuria
-Tags: futuristic, dark-mode, neon, block-friendly, responsive, glassmorphism
+Tags: light-theme, modern, clean, block-friendly, responsive, glassmorphism, loremflickr
 */
 
 /* Reset & Root Setup */
@@ -22,8 +22,8 @@ Tags: futuristic, dark-mode, neon, block-friendly, responsive, glassmorphism
 
 body {
   font-family: var(--wp--preset--font-family--inter, 'Inter', sans-serif);
-  background-color: var(--wp--preset--color--bg-dark, #0b0f19);
-  color: var(--wp--preset--color--text-main, #f8fafc);
+  background-color: var(--wp--preset--color--bg-surface, #f8f9fa);
+  color: var(--wp--preset--color--text-main, #1e293b);
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -35,18 +35,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--wp--preset--color--text-main, #f8fafc);
+  color: var(--wp--preset--color--text-main, #1e293b);
 }
 
 a {
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 10px var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: #0044cc;
 }
 
 /* Common Section Tags & Headers */
@@ -57,7 +56,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
   margin-bottom: 0.75rem;
 }
 
@@ -69,28 +68,27 @@ a:hover {
 .section-title {
   font-size: clamp(2rem, 4vw, 2.75rem);
   margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0f172a;
 }
 
 .section-subtitle {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 1.1rem;
   max-width: 650px;
   margin: 0 auto;
 }
 
-/* Header & Glassmorphism Navigation */
+/* Header & Light Glassmorphism Navigation */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(11, 15, 25, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #e2e8f0;
   padding: 1.25rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .header-container {
@@ -108,12 +106,29 @@ a:hover {
   font-size: 1.75rem;
   font-weight: 900;
   letter-spacing: 0.3em;
-  background: linear-gradient(135deg, #ffffff 0%, var(--wp--preset--color--neon-cyan, #00f2fe) 60%, var(--wp--preset--color--neon-purple, #9d4edd) 100%);
+  background: linear-gradient(135deg, #0f172a 0%, var(--wp--preset--color--primary-blue, #0066ff) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+}
+
+.site-title-brand a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--wp--preset--color--primary-blue, #0066ff), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.site-title-brand a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Navigation Links */
@@ -128,7 +143,7 @@ a:hover {
   font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   letter-spacing: 0.05em;
   padding: 0.5rem 0.25rem;
   position: relative;
@@ -141,15 +156,14 @@ a:hover {
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--wp--preset--color--neon-cyan, #00f2fe);
+  background: var(--wp--preset--color--primary-blue, #0066ff);
   transform: scaleX(0);
   transition: transform 0.3s ease;
-  box-shadow: 0 0 8px var(--wp--preset--color--neon-cyan, #00f2fe);
 }
 
 .main-navigation a:hover,
 .main-navigation .current-menu-item > a {
-  color: #ffffff;
+  color: var(--wp--preset--color--primary-blue, #0066ff);
 }
 
 .main-navigation a:hover::before,
@@ -173,21 +187,20 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #0b0f19 !important;
-  background: linear-gradient(135deg, var(--wp--preset--color--neon-cyan, #00f2fe) 0%, var(--wp--preset--color--neon-blue, #3b82f6) 100%);
+  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--wp--preset--color--primary-blue, #0066ff) 0%, #0052cc 100%);
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.35);
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .btn-futuria-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 35px rgba(0, 242, 254, 0.7);
-  color: #0b0f19 !important;
-  text-shadow: none !important;
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.5);
+  color: #ffffff !important;
 }
 
 .btn-futuria-outline {
@@ -199,35 +212,34 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #ffffff !important;
-  background: rgba(17, 24, 39, 0.6);
-  border: 1px solid rgba(0, 242, 254, 0.4);
+  color: #1e293b !important;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 50px;
   cursor: pointer;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .btn-futuria-outline:hover {
-  border-color: var(--wp--preset--color--neon-cyan, #00f2fe);
-  background: rgba(0, 242, 254, 0.1);
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
-  color: #ffffff !important;
+  border-color: var(--wp--preset--color--primary-blue, #0066ff);
+  color: var(--wp--preset--color--primary-blue, #0066ff) !important;
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.15);
   transform: translateY(-3px);
 }
 
 /* Front Page Hero Section */
 .hero-futuria {
   position: relative;
-  padding: 6rem 2rem;
+  padding: 6.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 75vh;
-  background: radial-gradient(circle at 50% 40%, rgba(0, 242, 254, 0.12) 0%, rgba(157, 78, 221, 0.08) 45%, rgba(11, 15, 25, 0.98) 80%), url('https://placehold.co/1920x1080/0b0f19/111827') center/cover no-repeat;
+  background: radial-gradient(circle at 50% 40%, rgba(0, 102, 255, 0.06) 0%, rgba(79, 70, 229, 0.04) 45%, rgba(248, 249, 250, 0.95) 85%), url('https://loremflickr.com/1920/1080/modern,office') center/cover no-repeat;
   background-blend-mode: overlay;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .hero-futuria-content {
@@ -244,9 +256,9 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
-  background: rgba(0, 242, 254, 0.1);
-  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.2);
   border-radius: 30px;
   margin-bottom: 1.5rem;
 }
@@ -255,14 +267,12 @@ a:hover {
   font-size: clamp(2.5rem, 5vw, 4.2rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, var(--wp--preset--color--neon-cyan, #00f2fe) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0f172a;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   margin-bottom: 2.5rem;
   max-width: 700px;
   margin-left: auto;
@@ -287,19 +297,18 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 4rem;
-  background: rgba(17, 24, 39, 0.5);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 24px;
-  padding: 3rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  padding: 3.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .media-text-image {
   flex: 1;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .media-text-image img {
@@ -321,14 +330,13 @@ a:hover {
 .media-text-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1.25rem;
-
+  color: #0f172a;
 }
 
 .media-text-content p {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 1.1rem;
   margin-bottom: 1.25rem;
-
 }
 
 /* Team Section */
@@ -345,19 +353,19 @@ a:hover {
 }
 
 .team-card {
-  background: rgba(17, 24, 39, 0.6);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 20px;
   padding: 2.5rem 1.75rem;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   transition: all 0.4s ease;
 }
 
 .team-card:hover {
   transform: translateY(-8px);
-  border-color: var(--wp--preset--color--neon-purple, #9d4edd);
-  box-shadow: 0 12px 30px rgba(157, 78, 221, 0.2);
+  border-color: rgba(0, 102, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.12);
 }
 
 .team-avatar-wrapper {
@@ -366,8 +374,8 @@ a:hover {
   margin: 0 auto 1.5rem auto;
   border-radius: 50%;
   padding: 4px;
-  background: linear-gradient(135deg, var(--wp--preset--color--neon-cyan, #00f2fe), var(--wp--preset--color--neon-purple, #9d4edd));
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+  background: linear-gradient(135deg, var(--wp--preset--color--primary-blue, #0066ff), var(--wp--preset--color--accent-purple, #4f46e5));
+  box-shadow: 0 6px 16px rgba(0, 102, 255, 0.2);
 }
 
 .team-avatar {
@@ -381,19 +389,19 @@ a:hover {
 .team-name {
   font-size: 1.4rem;
   margin-bottom: 0.25rem;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .team-role {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
   margin-bottom: 1rem;
 }
 
 .team-bio {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 0.95rem;
 }
 
@@ -411,11 +419,11 @@ a:hover {
 }
 
 .feature-card {
-  background: rgba(17, 24, 39, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 20px;
   padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
@@ -423,8 +431,8 @@ a:hover {
 
 .feature-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(0, 242, 254, 0.5);
-  box-shadow: 0 12px 30px rgba(0, 242, 254, 0.15), 0 0 15px rgba(157, 78, 221, 0.1);
+  border-color: rgba(0, 102, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.12);
 }
 
 .feature-image-wrapper {
@@ -449,11 +457,11 @@ a:hover {
 .feature-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .feature-desc {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -472,11 +480,11 @@ a:hover {
 }
 
 .blog-card {
-  background: rgba(17, 24, 39, 0.6);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
@@ -484,8 +492,8 @@ a:hover {
 
 .blog-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0, 242, 254, 0.4);
-  box-shadow: 0 12px 25px rgba(0, 242, 254, 0.12);
+  border-color: rgba(0, 102, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.12);
 }
 
 .blog-card-image-wrapper {
@@ -514,7 +522,7 @@ a:hover {
 .blog-card-meta {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
   margin-bottom: 0.75rem;
 }
 
@@ -525,15 +533,15 @@ a:hover {
 }
 
 .blog-card-title a {
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .blog-card-title a:hover {
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
 }
 
 .blog-card-excerpt {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -543,7 +551,7 @@ a:hover {
   font-family: var(--wp--preset--font-family--outfit, 'Outfit', sans-serif);
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: var(--wp--preset--color--primary-blue, #0066ff);
 }
 
 /* Call to Action Banner */
@@ -554,33 +562,34 @@ a:hover {
 }
 
 .cta-banner-card {
-  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9) 0%, rgba(157, 78, 221, 0.2) 100%);
-  border: 1px solid rgba(0, 242, 254, 0.3);
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   border-radius: 24px;
   padding: 4rem 2rem;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
   position: relative;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .cta-banner-card h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .cta-banner-card p {
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  color: #94a3b8;
   font-size: 1.15rem;
   max-width: 600px;
   margin: 0 auto 2rem auto;
 }
 
-/* Small Hero Banner for Inner Pages */
+/* Small Hero Banner for Inner Pages (Light Theme) */
 .small-hero {
-  background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(157, 78, 221, 0.15) 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 4.5rem 2rem;
   text-align: center;
 }
 
@@ -590,23 +599,21 @@ a:hover {
 }
 
 .small-hero-title {
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
-  background: linear-gradient(135deg, #ffffff 0%, var(--wp--preset--color--neon-cyan, #00f2fe) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0f172a;
 }
 
 /* Page Template Styles (Gutenberg Container) */
 .page-container {
   max-width: var(--wp--style--global--content-size, 1200px);
-  margin: 3rem auto;
+  margin: 3.5rem auto;
   padding: 0 2rem;
 }
 
 .entry-content {
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: #334155;
   line-height: 1.8;
 }
 
@@ -617,9 +624,10 @@ a:hover {
 .entry-content h2, .entry-content h3 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
+  color: #0f172a;
 }
 
-/* Futuria Gallery Layout */
+/* Futuria Gallery Layout (Light Theme) */
 .futuria-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -630,14 +638,14 @@ a:hover {
 .futuria-gallery-item {
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.4s ease, border-color 0.4s ease;
 }
 
 .futuria-gallery-item:hover {
   transform: scale(1.03);
-  border-color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  border-color: var(--wp--preset--color--primary-blue, #0066ff);
 }
 
 .futuria-gallery-item img {
@@ -663,10 +671,10 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  background: #070a12;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 3rem 2rem 2rem 2rem;
-  color: var(--wp--preset--color--text-muted, #94a3b8);
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  padding: 3.5rem 2rem 2.5rem 2rem;
+  color: var(--wp--preset--color--text-muted, #64748b);
   font-size: 0.95rem;
   margin-top: auto;
 }
@@ -686,13 +694,13 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 900;
   letter-spacing: 0.3em;
-  color: var(--wp--preset--color--neon-cyan, #00f2fe);
+  color: #0f172a;
 }
 
 .footer-divider {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, var(--wp--preset--color--neon-cyan, #00f2fe), var(--wp--preset--color--neon-purple, #9d4edd));
+  background: linear-gradient(90deg, var(--wp--preset--color--primary-blue, #0066ff), var(--wp--preset--color--accent-purple, #4f46e5));
   border-radius: 2px;
 }
 
