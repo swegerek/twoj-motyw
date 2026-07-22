@@ -23,6 +23,50 @@ get_header();
 	</div>
 </section>
 
+<!-- Features Grid / Services Section (First Content Section) -->
+<section class="features-section container-wide">
+	<div class="section-header">
+		<span class="section-tag">NASZE USŁUGI</span>
+		<h2 class="section-title">Kluczowe Technologie Futuria</h2>
+		<p class="section-subtitle">Rozwiązania nowej generacji zaprojektowane dla liderów branży cyfrowej</p>
+	</div>
+
+	<div class="features-grid">
+		<!-- Card 1 -->
+		<article class="feature-card">
+			<div class="feature-image-wrapper">
+				<img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Autonomiczne AI">
+			</div>
+			<h3 class="feature-title">Autonomiczne AI</h3>
+			<p class="feature-desc">
+				Zaawansowane systemy sztucznej inteligencji zdolne do uczenia maszynowego w czasie rzeczywistym i automatyzacji złożonych procesów.
+			</p>
+		</article>
+
+		<!-- Card 2 -->
+		<article class="feature-card">
+			<div class="feature-image-wrapper">
+				<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Przetwarzanie Kwantowe">
+			</div>
+			<h3 class="feature-title">Chmura Kwantowa</h3>
+			<p class="feature-desc">
+				Superkomputery nowej generacji i algorytmy kwantowe zapewniające nieosiągalną dotąd moc obliczeniową i analityczną.
+			</p>
+		</article>
+
+		<!-- Card 3 -->
+		<article class="feature-card">
+			<div class="feature-image-wrapper">
+				<img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Cyberbezpieczeństwo">
+			</div>
+			<h3 class="feature-title">Cyber Shield</h3>
+			<p class="feature-desc">
+				Wielowarstwowe architektury bezpieczeństwa chroniące zasoby informacyjne przed najnowszymi cyfrowymi zagrożeniami.
+			</p>
+		</article>
+	</div>
+</section>
+
 <!-- Media & Text Section -->
 <section class="media-text-section container-wide">
 	<div class="media-text-container">
@@ -80,50 +124,6 @@ get_header();
 			<h3 class="team-name">Sarah Chen</h3>
 			<span class="team-role">Lead Cyber Security</span>
 			<p class="team-bio">Ekspertka ds. kryptografii kwantowej i zabezpieczania krytycznej infrastruktury informatycznej.</p>
-		</article>
-	</div>
-</section>
-
-<!-- Features Grid / Services Section -->
-<section class="features-section container-wide">
-	<div class="section-header">
-		<span class="section-tag">NASZE USŁUGI</span>
-		<h2 class="section-title">Kluczowe Technologie Futuria</h2>
-		<p class="section-subtitle">Rozwiązania nowej generacji zaprojektowane dla liderów branży cyfrowej</p>
-	</div>
-
-	<div class="features-grid">
-		<!-- Card 1 -->
-		<article class="feature-card">
-			<div class="feature-image-wrapper">
-				<img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Autonomiczne AI">
-			</div>
-			<h3 class="feature-title">Autonomiczne AI</h3>
-			<p class="feature-desc">
-				Zaawansowane systemy sztucznej inteligencji zdolne do uczenia maszynowego w czasie rzeczywistym i automatyzacji złożonych procesów.
-			</p>
-		</article>
-
-		<!-- Card 2 -->
-		<article class="feature-card">
-			<div class="feature-image-wrapper">
-				<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Przetwarzanie Kwantowe">
-			</div>
-			<h3 class="feature-title">Chmura Kwantowa</h3>
-			<p class="feature-desc">
-				Superkomputery nowej generacji i algorytmy kwantowe zapewniające nieosiągalną dotąd moc obliczeniową i analityczną.
-			</p>
-		</article>
-
-		<!-- Card 3 -->
-		<article class="feature-card">
-			<div class="feature-image-wrapper">
-				<img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Cyberbezpieczeństwo">
-			</div>
-			<h3 class="feature-title">Cyber Shield</h3>
-			<p class="feature-desc">
-				Wielowarstwowe architektury bezpieczeństwa chroniące zasoby informacyjne przed najnowszymi cyfrowymi zagrożeniami.
-			</p>
 		</article>
 	</div>
 </section>
