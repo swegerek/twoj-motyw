@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<!-- Hero Section -->
+<!-- Main Hero Section -->
 <section class="hero-futuria">
 	<div class="hero-futuria-content">
 		<span class="hero-tag">INNOWACJE PRZYSZŁOŚCI</span>
@@ -23,10 +23,72 @@ get_header();
 	</div>
 </section>
 
-<!-- Features Grid Section -->
+<!-- Media & Text Section -->
+<section class="media-text-section">
+	<div class="media-text-container">
+		<div class="media-text-image">
+			<img src="https://placehold.co/600x400/111827/00f2fe" alt="Futuria Innovation Center">
+		</div>
+		<div class="media-text-content">
+			<span class="section-tag">O NASZEJ WIZJI</span>
+			<h2>Pionierzy Cyfrowej Transformacji</h2>
+			<p>
+				W Futuria nie tylko śledzimy trendy technologiczne – my je kształtujemy. Nasze zaawansowane laboratoria badawcze łączą inżynierię oprogramowania z najnowszymi osiągnięciami nauki.
+			</p>
+			<p>
+				Dostarczamy skalowalne, bezpieczne i ultrawydajne ekosystemy dla przedsiębiorstw gotowych na wyzwania nadchodzącej dekady.
+			</p>
+			<a href="<?php echo esc_url( home_url( '/o-nas/' ) ); ?>" class="btn-futuria-primary" style="margin-top: 1rem;">Poznaj Naszą Historię</a>
+		</div>
+	</div>
+</section>
+
+<!-- Our Team Section -->
+<section class="team-section">
+	<div class="section-header">
+		<span class="section-tag">ZESPÓŁ EKSPERTÓW</span>
+		<h2 class="section-title">Poznaj Ludzi Tworzących Przyszłość</h2>
+		<p class="section-subtitle">Wizjonerzy, inżynierowie i architekci nowoczesnych systemów cyfrowych</p>
+	</div>
+
+	<div class="team-grid">
+		<!-- Team Member 1 -->
+		<article class="team-card">
+			<div class="team-avatar-wrapper">
+				<img src="https://placehold.co/200x200/111827/00f2fe" alt="Dr Elena Vance" class="team-avatar">
+			</div>
+			<h3 class="team-name">Dr Elena Vance</h3>
+			<span class="team-role">Head of Quantum AI</span>
+			<p class="team-bio">Specjalistka w dziedzinie głębokiego uczenia maszynowego oraz obliczeń kwantowych z ponad 12-letnim doświadczeniem.</p>
+		</article>
+
+		<!-- Team Member 2 -->
+		<article class="team-card">
+			<div class="team-avatar-wrapper">
+				<img src="https://placehold.co/200x200/111827/9d4edd" alt="Marcus Sterling" class="team-avatar">
+			</div>
+			<h3 class="team-name">Marcus Sterling</h3>
+			<span class="team-role">Chief Systems Architect</span>
+			<p class="team-bio">Architekt rozproszonych chmur obliczeniowych i rozwiązań o wysokiej dostępności dla sektora Enterprise.</p>
+		</article>
+
+		<!-- Team Member 3 -->
+		<article class="team-card">
+			<div class="team-avatar-wrapper">
+				<img src="https://placehold.co/200x200/111827/3b82f6" alt="Sarah Chen" class="team-avatar">
+			</div>
+			<h3 class="team-name">Sarah Chen</h3>
+			<span class="team-role">Lead Cyber Security</span>
+			<p class="team-bio">Ekspertka ds. kryptografii kwantowej i zabezpieczania krytycznej infrastruktury informatycznej.</p>
+		</article>
+	</div>
+</section>
+
+<!-- Features Grid / Services Section -->
 <section class="features-section">
 	<div class="section-header">
-		<h2 class="section-title">Nasze Kluczowe Technologie</h2>
+		<span class="section-tag">NASZE SPECJALIZACJE</span>
+		<h2 class="section-title">Kluczowe Technologie Futuria</h2>
 		<p class="section-subtitle">Rozwiązania nowej generacji zaprojektowane dla liderów branży cyfrowej</p>
 	</div>
 
@@ -34,7 +96,7 @@ get_header();
 		<!-- Card 1 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://placehold.co/400x300/111827/00f2fe?text=AI+Core" alt="Sztuczna Inteligencja">
+				<img src="https://placehold.co/400x300/111827/00f2fe" alt="Sztuczna Inteligencja">
 			</div>
 			<h3 class="feature-title">Autonomiczne AI</h3>
 			<p class="feature-desc">
@@ -45,7 +107,7 @@ get_header();
 		<!-- Card 2 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://placehold.co/400x300/111827/9d4edd?text=Quantum+Cloud" alt="Przetwarzanie Kwantowe">
+				<img src="https://placehold.co/400x300/111827/9d4edd" alt="Przetwarzanie Kwantowe">
 			</div>
 			<h3 class="feature-title">Chmura Kwantowa</h3>
 			<p class="feature-desc">
@@ -56,13 +118,64 @@ get_header();
 		<!-- Card 3 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://placehold.co/400x300/111827/3b82f6?text=Cyber+Shield" alt="Cyberbezpieczeństwo">
+				<img src="https://placehold.co/400x300/111827/3b82f6" alt="Cyberbezpieczeństwo">
 			</div>
 			<h3 class="feature-title">Cyber Shield</h3>
 			<p class="feature-desc">
 				Wielowarstwowe architektury bezpieczeństwa chroniące zasoby informacyjne przed najnowszymi cyfrowymi zagrożeniami.
 			</p>
 		</article>
+	</div>
+</section>
+
+<!-- Latest Blog Posts Section (WP_Query) -->
+<section class="blog-posts-section">
+	<div class="section-header">
+		<span class="section-tag">WIEDZA I AKTUALNOŚCI</span>
+		<h2 class="section-title">Najnowsze Artykuły z Bloga</h2>
+		<p class="section-subtitle">Bądź na bieżąco z najnowszymi trendami w świecie nowoczesnych technologii</p>
+	</div>
+
+	<div class="blog-grid">
+		<?php
+		$latest_posts_query = new WP_Query(
+			array(
+				'posts_per_page'      => 3,
+				'post_status'         => 'publish',
+				'ignore_sticky_posts' => true,
+			)
+		);
+
+		if ( $latest_posts_query->have_posts() ) :
+			while ( $latest_posts_query->have_posts() ) :
+				$latest_posts_query->the_post();
+				?>
+				<article class="blog-card">
+					<div class="blog-card-image-wrapper">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'medium_large' ); ?>
+						<?php else : ?>
+							<img src="https://placehold.co/600x400/111827/00f2fe" alt="<?php the_title_attribute(); ?>">
+						<?php endif; ?>
+					</div>
+					<div class="blog-card-body">
+						<div class="blog-card-meta"><?php echo get_the_date( 'd F Y' ); ?></div>
+						<h3 class="blog-card-title">
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</h3>
+						<div class="blog-card-excerpt">
+							<?php echo wp_trim_words( get_the_excerpt(), 18, '...' ); ?>
+						</div>
+						<a href="<?php the_permalink(); ?>" class="blog-card-link">Czytaj Więcej &rarr;</a>
+					</div>
+				</article>
+				<?php
+			endwhile;
+			wp_reset_postdata();
+		else :
+			?>
+			<p style="text-align: center; color: var(--wp--preset--color--text-muted); width: 100%;">Brak opublikowanych artykułów.</p>
+		<?php endif; ?>
 	</div>
 </section>
 

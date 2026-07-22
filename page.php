@@ -8,21 +8,24 @@
 get_header();
 ?>
 
-<div class="page-container">
-	<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="page-header">
-					<h1 class="page-header-title"><?php the_title(); ?></h1>
-				</header>
+<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<!-- Small Hero Banner for Inner Pages -->
+		<section class="small-hero">
+			<div class="small-hero-container">
+				<h1 class="small-hero-title"><?php the_title(); ?></h1>
+			</div>
+		</section>
 
+		<div class="page-container">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="entry-content">
 					<?php the_content(); ?>
 				</div>
 			</article>
-		<?php endwhile; ?>
-	<?php endif; ?>
-</div>
+		</div>
+	<?php endwhile; ?>
+<?php endif; ?>
 
 <?php
 get_footer();
