@@ -9,8 +9,8 @@
 get_header();
 ?>
 
-<!-- Small Hero Banner with Contact Background -->
-<section class="small-hero hero-kontakt-bg">
+<!-- Small Hero Banner with Unsplash Contact Background -->
+<section class="small-hero" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
 	<div class="small-hero-container">
 		<h1 class="small-hero-title"><?php the_title(); ?></h1>
 		<p style="color: #f1f5f9; font-size: 1.15rem; margin-top: 0.5rem; text-shadow: 0 1px 6px rgba(0,0,0,0.5);">Skontaktuj się z naszym zespołem inżynierów i zaprojektuj przyszłość swojej firmy.</p>
