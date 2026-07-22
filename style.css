@@ -1,0 +1,144 @@
+/*
+Theme Name: Twój Motyw
+Theme URI: https://github.com/swegerek/twoj-motyw
+Author: Antigravity Assistant & Developer
+Author URI: https://github.com/swegerek
+Description: Nowoczesny, lekki i przejrzysty motyw WordPress z pełną obsługą nawigacji HTML5.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twoj-motyw
+Tags: clean, responsive, modern, flexbox
+*/
+
+:root {
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --border-color: #e2e8f0;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+.site-header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-title a {
+  color: var(--text-main);
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-navigation a {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.main-navigation a:hover,
+.main-navigation .current-menu-item > a {
+  color: var(--primary-color);
+}
+
+.site-main {
+  flex: 1;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.entry-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.entry-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.entry-title {
+  font-size: 2.2rem;
+  color: var(--text-main);
+}
+
+.entry-content {
+  font-size: 1.05rem;
+}
+
+.entry-content p {
+  margin-bottom: 1.25rem;
+}
+
+.entry-content p:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: auto;
+}
