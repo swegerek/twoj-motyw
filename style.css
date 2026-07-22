@@ -87,25 +87,37 @@ a:hover {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--wp--preset--color--primary-blue, #0066ff);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+p:has(> .section-tag) {
+  margin-bottom: 0.25rem !important;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  margin-bottom: 0.75rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: 0.5rem;
   color: #0f172a;
 }
 
 .section-subtitle {
   color: var(--wp--preset--color--text-muted, #64748b);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   max-width: 650px;
   margin: 0 auto;
+}
+
+/* Hide any empty paragraph tags inserted by wpautop */
+.entry-content p:empty,
+p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Header & Light Glassmorphism Navigation */
