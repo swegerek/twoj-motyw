@@ -237,7 +237,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-height: 75vh;
-  background: radial-gradient(circle at 50% 40%, rgba(0, 102, 255, 0.06) 0%, rgba(79, 70, 229, 0.04) 45%, rgba(248, 249, 250, 0.95) 85%), url('https://loremflickr.com/1920/1080/modern,office') center/cover no-repeat;
+  background: radial-gradient(circle at 50% 40%, rgba(0, 102, 255, 0.06) 0%, rgba(79, 70, 229, 0.04) 45%, rgba(248, 249, 250, 0.95) 85%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   background-blend-mode: overlay;
   border-bottom: 1px solid #e2e8f0;
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * The front page template file for Futuria theme (Light Theme with LoremFlickr)
+ * The front page template file for Futuria theme (Light Theme with Unsplash Photography)
  *
  * @package Futuria
  */
@@ -27,7 +27,7 @@ get_header();
 <section class="media-text-section">
 	<div class="media-text-container">
 		<div class="media-text-image">
-			<img src="https://loremflickr.com/600/400/technology,business" alt="Futuria Innovation Center">
+			<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Futuria Innovation Center">
 		</div>
 		<div class="media-text-content">
 			<span class="section-tag">O NASZEJ WIZJI</span>
@@ -55,7 +55,7 @@ get_header();
 		<!-- Team Member 1 -->
 		<article class="team-card">
 			<div class="team-avatar-wrapper">
-				<img src="https://loremflickr.com/300/300/portrait,professional" alt="Dr Elena Vance" class="team-avatar">
+				<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr Elena Vance" class="team-avatar">
 			</div>
 			<h3 class="team-name">Dr Elena Vance</h3>
 			<span class="team-role">Head of Quantum AI</span>
@@ -65,7 +65,7 @@ get_header();
 		<!-- Team Member 2 -->
 		<article class="team-card">
 			<div class="team-avatar-wrapper">
-				<img src="https://loremflickr.com/300/300/portrait,executive" alt="Marcus Sterling" class="team-avatar">
+				<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Marcus Sterling" class="team-avatar">
 			</div>
 			<h3 class="team-name">Marcus Sterling</h3>
 			<span class="team-role">Chief Systems Architect</span>
@@ -75,7 +75,7 @@ get_header();
 		<!-- Team Member 3 -->
 		<article class="team-card">
 			<div class="team-avatar-wrapper">
-				<img src="https://loremflickr.com/300/300/portrait,engineer" alt="Sarah Chen" class="team-avatar">
+				<img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Sarah Chen" class="team-avatar">
 			</div>
 			<h3 class="team-name">Sarah Chen</h3>
 			<span class="team-role">Lead Cyber Security</span>
@@ -96,7 +96,7 @@ get_header();
 		<!-- Card 1 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://loremflickr.com/400/300/technology,computer" alt="Sztuczna Inteligencja">
+				<img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80" alt="Sztuczna Inteligencja">
 			</div>
 			<h3 class="feature-title">Autonomiczne AI</h3>
 			<p class="feature-desc">
@@ -107,7 +107,7 @@ get_header();
 		<!-- Card 2 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://loremflickr.com/400/300/quantum,server" alt="Przetwarzanie Kwantowe">
+				<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Przetwarzanie Kwantowe">
 			</div>
 			<h3 class="feature-title">Chmura Kwantowa</h3>
 			<p class="feature-desc">
@@ -118,7 +118,7 @@ get_header();
 		<!-- Card 3 -->
 		<article class="feature-card">
 			<div class="feature-image-wrapper">
-				<img src="https://loremflickr.com/400/300/security,cyber" alt="Cyberbezpieczeństwo">
+				<img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Cyberbezpieczeństwo">
 			</div>
 			<h3 class="feature-title">Cyber Shield</h3>
 			<p class="feature-desc">
@@ -155,7 +155,7 @@ get_header();
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'medium_large' ); ?>
 						<?php else : ?>
-							<img src="https://loremflickr.com/600/400/computer,laptop" alt="<?php the_title_attribute(); ?>">
+							<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="<?php the_title_attribute(); ?>">
 						<?php endif; ?>
 					</div>
 					<div class="blog-card-body">

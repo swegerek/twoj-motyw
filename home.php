@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the blog posts index in Futuria theme (Light Theme)
+ * The template for displaying the blog posts index in Futuria theme (Light Theme with Unsplash Photography)
  *
  * @package Futuria
  */
@@ -25,7 +25,7 @@ get_header();
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'medium_large' ); ?>
 						<?php else : ?>
-							<img src="https://loremflickr.com/600/400/computer,laptop" alt="<?php the_title_attribute(); ?>">
+							<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="<?php the_title_attribute(); ?>">
 						<?php endif; ?>
 					</div>
 					<div class="blog-card-body">
