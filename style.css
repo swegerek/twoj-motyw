@@ -1032,7 +1032,26 @@ a:hover {
 }
 
 .footer-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   color: var(--wp--preset--color--text-muted, #64748b);
+}
+
+.footer-svg-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--wp--preset--color--primary-blue, #0066ff);
+  flex-shrink: 0;
+}
+
+.footer-heart-icon {
+  width: 16px;
+  height: 16px;
+  fill: #ef4444;
+  vertical-align: middle;
+  margin: 0 3px;
+  display: inline-block;
 }
 
 .footer-hr {
