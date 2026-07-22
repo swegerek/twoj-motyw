@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the blog posts index in Futuria theme (Light Theme with Unsplash Photography)
+ * The template for displaying the blog posts index in Futuria theme
  *
  * @package Futuria
  */
@@ -8,11 +8,11 @@
 get_header();
 ?>
 
-<!-- Small Hero Banner for Blog Index -->
-<section class="small-hero">
+<!-- Small Hero Banner for Blog Index with Unique Tech Background -->
+<section class="small-hero" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
 	<div class="small-hero-container">
-		<h1 class="small-hero-title">Aktualności & Technologie</h1>
-		<p style="color: var(--wp--preset--color--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Najnowsze artykuły, raporty techniczne i przemyślenia naszych inżynierów</p>
+		<h1 class="small-hero-title" style="color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Aktualności & Technologie</h1>
+		<p style="color: #f1f5f9; font-size: 1.1rem; margin-top: 0.5rem; text-shadow: 0 1px 6px rgba(0,0,0,0.5);">Najnowsze artykuły, raporty techniczne i przemyślenia naszych inżynierów</p>
 	</div>
 </section>
 
