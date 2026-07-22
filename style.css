@@ -539,6 +539,10 @@ a:hover {
   line-height: 1.6;
 }
 
+.features-grid > p {
+  display: none !important;
+}
+
 /* Blog Posts Section & Grid */
 .blog-posts-section {
   padding: 6rem 2rem;
