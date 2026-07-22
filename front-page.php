@@ -1,6 +1,6 @@
 <?php
 /**
- * The front page template file for Futuria theme (Light Theme with Unsplash Photography)
+ * The front page template file for Futuria theme
  *
  * @package Futuria
  */
@@ -179,12 +179,49 @@ get_header();
 	</div>
 </section>
 
-<!-- CTA Banner Section -->
-<section class="cta-banner-section">
-	<div class="cta-banner-card">
-		<h2>Gotów na cyfrową transformację?</h2>
-		<p>Skontaktuj się z naszym zespołem ekspertów i zaprojektuj innowacyjną przyszłość swojej firmy.</p>
-		<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn-futuria-primary">Rozpocznij Projekt</a>
+<!-- Full Width Contact Section with Darkened Image Background -->
+<section class="cta-contact-section">
+	<div class="cta-contact-container">
+		<div class="cta-contact-grid">
+			<!-- Left Side: Image & Catchy Text -->
+			<div class="cta-contact-left">
+				<span class="section-tag" style="color: #00f2fe;">MASZ PYTANIA?</span>
+				<h2 class="cta-contact-title">Rozpocznijmy Wspólny Projekt</h2>
+				<p class="cta-contact-desc">
+					Nasi inżynierowie i architekci oprogramowania są gotowi, aby pomóc Ci zrealizować najbardziej wymagające wyzwania cyfrowe.
+				</p>
+				<div class="cta-contact-image">
+					<img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=800&q=80" alt="Futuria Contact & Support">
+				</div>
+			</div>
+
+			<!-- Right Side: Contact Form -->
+			<div class="cta-contact-right">
+				<div class="cta-form-card">
+					<h3>Napisz Do Nas</h3>
+					<p class="cta-form-subtitle">Wypełnij formularz – odpowiemy w ciągu 24 godzin.</p>
+					<form action="#" method="post" class="futuria-contact-form" onsubmit="event.preventDefault(); alert('Dziękujemy! Wiadomość została wysłana.'); this.reset();">
+						<div class="form-group">
+							<label for="fp-name">Imię i Nazwisko *</label>
+							<input type="text" id="fp-name" name="name" placeholder="np. Jan Kowalski" required>
+						</div>
+						<div class="form-group">
+							<label for="fp-email">Adres E-mail *</label>
+							<input type="email" id="fp-email" name="email" placeholder="jan.kowalski@example.com" required>
+						</div>
+						<div class="form-group">
+							<label for="fp-subject">Temat</label>
+							<input type="text" id="fp-subject" name="subject" placeholder="Zapytanie o projekt">
+						</div>
+						<div class="form-group">
+							<label for="fp-message">Treść Wiadomości *</label>
+							<textarea id="fp-message" name="message" rows="4" placeholder="Opisz swoje zapotrzebowanie..." required></textarea>
+						</div>
+						<button type="submit" class="btn-futuria-primary" style="width: 100%; margin-top: 0.5rem;">Wyślij Wiadomość &rarr;</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 

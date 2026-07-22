@@ -3,14 +3,14 @@ Theme Name: Futuria
 Theme URI: https://github.com/swegerek/twoj-motyw
 Author: Antigravity Assistant & Developer
 Author URI: https://github.com/swegerek
-Description: Elegancki, jasny i nowoczesny motyw WordPress stworzony dla marki technologicznej Futuria (Light Theme) z natywną obsługą edytora Gutenberg, unikalnymi tłam Hero, formularzem kontaktowym oraz 4-kolumnową stopką.
-Version: 2.2.0
+Description: Elegancki, jasny i nowoczesny motyw WordPress stworzony dla marki technologicznej Futuria (Light Theme) z natywną obsługą edytora Gutenberg, unikalnymi tłam Hero, formularzem kontaktowym na pełną szerokość oraz 4-kolumnową stopką.
+Version: 2.3.0
 Requires at least: 6.0
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: futuria
-Tags: light-theme, modern, clean, block-friendly, responsive, glassmorphism, 4-column-footer, contact-form
+Tags: light-theme, modern, clean, block-friendly, responsive, glassmorphism, 4-column-footer, full-width-contact
 */
 
 /* Reset & Root Setup */
@@ -594,35 +594,78 @@ a:hover {
   color: var(--wp--preset--color--primary-blue, #0066ff);
 }
 
-/* Call to Action Banner */
-.cta-banner-section {
-  padding: 5rem 2rem;
-  max-width: var(--wp--style--global--content-size, 1200px);
-  margin: 0 auto 6rem auto;
-}
-
-.cta-banner-card {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-  border-radius: 24px;
-  padding: 4rem 2rem;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
-  position: relative;
-  overflow: hidden;
+/* Full Width Contact Section with Darkened Image Background */
+.cta-contact-section {
+  width: 100%;
+  padding: 6.5rem 2rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.82) 100%), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
-.cta-banner-card h2 {
-  font-size: 2.5rem;
+.cta-contact-container {
+  max-width: var(--wp--style--global--wide-size, 1400px);
+  margin: 0 auto;
+}
+
+.cta-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.cta-contact-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-contact-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  color: #ffffff;
   margin-bottom: 1rem;
-  color: #ffffff;
 }
 
-.cta-banner-card p {
-  color: #94a3b8;
-  font-size: 1.15rem;
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
+.cta-contact-desc {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.cta-contact-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cta-contact-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.cta-form-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  color: #1e293b;
+}
+
+.cta-form-card h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.cta-form-subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Small Hero Banner for Inner Pages */
@@ -647,7 +690,66 @@ a:hover {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* 2-Column Contact Page Layout */
+/* Subpage Card Floating Layout */
+.page-container {
+  max-width: var(--wp--style--global--content-size, 1200px);
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+}
+
+.entry-content-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 3.5rem 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.entry-content {
+  font-size: 1.1rem;
+  color: #334155;
+  line-height: 1.8;
+}
+
+.entry-content p {
+  margin-bottom: 1.5rem;
+}
+
+.entry-content h2, .entry-content h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+/* Futuria Gallery Layout */
+.futuria-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.futuria-gallery-item {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.futuria-gallery-item:hover {
+  transform: scale(1.03);
+  border-color: var(--wp--preset--color--primary-blue, #0066ff);
+}
+
+.futuria-gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 2-Column Dedicated Contact Page Layout */
 .contact-section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -734,11 +836,6 @@ a:hover {
   color: #0f172a;
 }
 
-.form-subtitle {
-  color: var(--wp--preset--color--text-muted, #64748b);
-  margin-bottom: 2rem;
-}
-
 .futuria-contact-form .form-group {
   margin-bottom: 1.5rem;
 }
@@ -772,6 +869,20 @@ a:hover {
   background-color: #ffffff;
   border-color: var(--wp--preset--color--primary-blue, #0066ff);
   box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.15);
+}
+
+/* Alignwide & Alignfull support for Gutenberg */
+.entry-content .alignwide {
+  max-width: var(--wp--style--global--wide-size, 1400px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-content .alignfull {
+  max-width: 100vw;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 /* Modern 4-Column Footer */
@@ -893,6 +1004,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
+
+  .cta-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -951,8 +1067,8 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .cta-banner-card {
-    padding: 2.5rem 1.5rem;
+  .entry-content-card {
+    padding: 2rem 1.5rem;
   }
 }
 
@@ -993,5 +1109,9 @@ a:hover {
 
   .futuria-gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cta-form-card {
+    padding: 2rem 1.5rem;
   }
 }
